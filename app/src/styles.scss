@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+// to make 1em to be equal 10px
+// this way calculations are easier
+html {
+  font-size: 62.5%;
+}
+
+html, body { 
+  height: 100%;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.app-spacer {
+  flex: 1 1 auto;
+}
