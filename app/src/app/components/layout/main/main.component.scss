@@ -1,6 +1,5 @@
 :host {
   flex: 1 1 auto;
-  margin: 1em 2em;
-  width: calc(100% - 1em);
-  max-width: 800px;
+  width: 100%;
+  overflow: auto;
 }
