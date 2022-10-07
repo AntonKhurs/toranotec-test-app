@@ -9,7 +9,7 @@ import { PageEvent } from '@angular/material/paginator';
 })
 export class GifGridComponent implements OnInit {
 
-  public query: string = 'test';
+  public query: string = '';
   public pageIndex: number = 0;
 
   public readonly pageSize: number = 9;
