@@ -13,7 +13,7 @@
           "tsconfig.json"
         ],
         "createDefaultProgram": true,
-        "tsconfigRootDir": "./app"
+        "tsconfigRootDir": "./"
       },
       "extends": [
         "plugin:@angular-eslint/recommended",
@@ -35,7 +35,11 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@angular-eslint/no-empty-lifecycle-method": [
+          "warn"
+        ],
+        "indent": ["error", 2]
       }
     },
     {
@@ -44,10 +48,7 @@
       ],
       "extends": [
         "plugin:@angular-eslint/template/recommended"
-      ],
-      "rules": {
-        "indent": ["error", 2]
-      }
+      ]
     }
   ]
 }
