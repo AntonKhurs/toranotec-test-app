@@ -26,6 +26,7 @@ export class GifGridComponent implements OnInit {
   }
 
   public getGifs() {
+    this.pageIndex = 0;
     this.giphyService.getGifs(this.query);
     this.search?.nativeElement.blur();
   }
