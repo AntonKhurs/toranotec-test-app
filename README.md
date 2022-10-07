@@ -1,4 +1,4 @@
-#Test task for Taranotec.
+# Test task for Taranotec.
 
 Basicaly this is a gif search app. Gifs are gathered from GIPHY API.
 
