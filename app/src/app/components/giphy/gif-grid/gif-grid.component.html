@@ -3,7 +3,8 @@
     <mat-label>query</mat-label>
     <input matInput
            #searchInput
-           placeholder="Ex. fireworks"
+           type="search"
+           placeholder="Enter your query and press enter/return"
            (keydown.enter)="getGifs();"
            [(ngModel)]="query">
   </mat-form-field>
