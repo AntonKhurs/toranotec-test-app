@@ -1,13 +1,36 @@
 .app-gif-card {
+  display: flex;
   flex-direction: column;
+  max-width: calc(33.3333333333vw - 6px);
+  background: #212121;
+  padding: 1rem;
+  border-radius: 4px;
+  flex-grow: 1;
+  color: #efefef;
 
   img {
-    max-height: 200px;
-    aspect-ratio: 1 / 1;
     object-fit: fill;
+    margin: auto;
   }
 }
 
 .app-gif-card-title {
   font-size: 1rem;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 22rem;
+}
+
+@media (max-width: 780px) {
+  .app-gif-card-title {
+    max-width: calc(100vw / 3 - 40px);
+  }
+
+  img {
+    max-height: 160px;
+    max-width: calc(100vw / 3 - 35px);
+    max-height: calc(100vw / 3 - 35px);
+  }
 }

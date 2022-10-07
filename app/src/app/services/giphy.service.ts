@@ -29,8 +29,6 @@ export class GiphyService {
   }
 
   public getGifsForPage(query: string = '', pageNumber: number = 0, limit: number = 9) {
-    console.log('getGifsForPage -> ', query, pageNumber, limit);
-    
     if (this.lastQuery === query && this.gifList.has(pageNumber)) {
       return;
     }

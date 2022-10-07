@@ -17,7 +17,6 @@ export class GifCardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('GifCardComponent -> onInit');
   }
 
 }

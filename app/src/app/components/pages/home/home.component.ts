@@ -10,7 +10,6 @@ export class PageHomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log('PageHomeComponent -> onInit');
   }
 
 }

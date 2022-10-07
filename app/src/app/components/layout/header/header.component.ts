@@ -13,13 +13,7 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  public callGiphyService() {
-    console.log('callGiphyService');
-    this.giphyService.getGifs('test');
-  }
-
   ngOnInit(): void {
-    console.log('HeaderComponent -> onInit');
   }
 
 }

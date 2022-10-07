@@ -1,10 +1,20 @@
-<mat-paginator
-              [length]="giphyService.pagination?.total_count"
-              [pageSize]="pageSize"
-              (page)="pageEvent($event)"
-              [hidePageSize]="true"
-              aria-label="Select page">
-</mat-paginator>
+<div class="app-search-bar">
+  <mat-form-field class="app-search-input" appearance="fill">
+    <mat-label>query</mat-label>
+    <input matInput
+           #searchInput
+           placeholder="Ex. fireworks"
+           (keydown.enter)="getGifs();"
+           [(ngModel)]="query">
+  </mat-form-field>
+  <mat-paginator
+                [length]="giphyService.pagination?.total_count"
+                [pageSize]="pageSize"
+                (page)="pageEvent($event)"
+                [hidePageSize]="true"
+                aria-label="Select page">
+  </mat-paginator>
+</div>
 
 <div class="app-gif-grid">
   <app-gif-card *ngFor="let gif of giphyService.gifList.get(pageIndex)" [gif]="gif"></app-gif-card>
