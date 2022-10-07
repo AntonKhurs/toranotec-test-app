@@ -1,6 +1,6 @@
 <mat-card class="app-gif-card">
   <mat-card-title class="app-gif-card-title">
-    {{gif?.title}}
+    {{gif?.title ? gif?.title : '_untitled_'}}
   </mat-card-title>
   <img mat-card-xl-image src="{{gif?.images?.fixed_height?.url}}" >
 </mat-card>
