@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "build_ghp": "ng build --base-href https://antonkhurs.github.io/toranotec-test-app/",
+    "deploy_ghp": "npx angular-cli-ghpages --dir=dist/app"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +40,7 @@
     "@types/jasmine": "~4.0.0",
     "@typescript-eslint/eslint-plugin": "5.37.0",
     "@typescript-eslint/parser": "5.37.0",
+    "angular-cli-ghpages": "^1.0.3",
     "eslint": "^8.23.1",
     "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-plugin-import": "^2.26.0",
