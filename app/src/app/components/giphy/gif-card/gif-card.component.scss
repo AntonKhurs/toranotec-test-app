@@ -1,0 +1,13 @@
+.app-gif-card {
+  flex-direction: column;
+
+  img {
+    max-height: 200px;
+    aspect-ratio: 1 / 1;
+    object-fit: fill;
+  }
+}
+
+.app-gif-card-title {
+  font-size: 1rem;
+}

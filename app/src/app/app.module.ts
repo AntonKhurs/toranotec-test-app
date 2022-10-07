@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +19,8 @@ import { MainComponent } from './components/layout/main/main.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { PageHomeComponent } from './components/pages/home/home.component';
 import { PageNotFoundComponent } from './components/pages/not-found/not-found.component';
+import { GifGridComponent } from './components/giphy/gif-grid/gif-grid.component';
+import { GifCardComponent } from './components/giphy/gif-card/gif-card.component';
 
 @NgModule({
   declarations: [
@@ -23,15 +30,22 @@ import { PageNotFoundComponent } from './components/pages/not-found/not-found.co
     MainComponent,
     LayoutComponent,
     PageHomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    GifGridComponent,
+    GifCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatToolbarModule,
+    MatGridListModule,
+    MatPaginatorModule,
+    MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

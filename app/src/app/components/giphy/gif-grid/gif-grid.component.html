@@ -1,0 +1,13 @@
+<mat-paginator
+              [length]="giphyService.pagination?.total_count"
+              [pageSize]="pageSize"
+              (page)="pageEvent($event)"
+              [hidePageSize]="true"
+              aria-label="Select page">
+</mat-paginator>
+
+<div class="app-gif-grid">
+  <app-gif-card *ngFor="let gif of giphyService.gifList.get(pageIndex)" [gif]="gif"></app-gif-card>
+</div>
+
+<mat-spinner class="app-spinner" *ngIf="giphyService.isRequesting"></mat-spinner>
